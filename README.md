@@ -115,7 +115,6 @@ D --> E[Top Drug Ranking]
 E --> F[Recovery Time + Confidence]
 F --> G[LLM Explanation]  
 
----
 
 ## 📸 Screenshots
 
@@ -139,7 +138,7 @@ F --> G[LLM Explanation]
 ## ▶️ Run Locally
 
 ### Backend
-
+```bash
 cd backend
 pip install -r requirements.txt
 python app.py
