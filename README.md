@@ -104,7 +104,7 @@ C --> D[ML + Statistical Scoring]
 D --> E[Top Drug Ranking]
 E --> F[Recovery Time + Confidence]
 F --> G[LLM Explanation]
-
+```
 <p align="center">
   <img src="screenshots/home.png" width="80%"/>
 </p>
