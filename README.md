@@ -1,255 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>💊 AI Drug Effectiveness Prediction System</title>
-  <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      background: #f8f9fa;
-      color: #333;
-      margin: 0;
-      padding: 40px 20px;
-    }
-    h1 {
-      margin: 0 0 16px 0;
-      text-align: center;
-      color: #2c3e50;
-    }
-    p {
-      text-align: center;
-      margin: 0 0 24px 0;
-    }
-    .badges {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 24px 0;
-    }
-    .badge {
-      display: inline-block;
-      margin: 4px;
-      padding: 4px 12px;
-      border-radius: 4px;
-      font-size: 12px;
-      font-weight: bold;
-    }
-    .badge-react {
-      background: #61dafb;
-      color: #2c3e50;
-    }
-    .badge-flask {
-      background: #222222;
-      color: #fff;
-    }
-    .badge-sklearn {
-      background: #fab03d;
-      color: #2c3e50;
-    }
-    .badge-llama {
-      background: #7ac143;
-      color: #2c3e50;
-    }
-    .badge-active {
-      background: #28a745;
-      color: #fff;
-    }
-    .badge-yt {
-      background: #e74c3c;
-      color: #fff;
-    }
-    hr {
-      border: 1px solid #ddd;
-      margin: 32px 0;
-    }
-    section {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 16px 0;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px 12px;
-      text-align: left;
-    }
-    th {
-      background: #eaeaea;
-    }
-    img {
-      display: block;
-      margin: 16px auto;
-    }
-    pre {
-      background: #f4f4f4;
-      padding: 12px;
-      border-radius: 4px;
-      overflow-x: auto;
-    }
-  </style>
-</head>
-<body>
+<h1 align="center">💊 AI Drug Effectiveness Prediction System</h1>
 
-  <section>
+<p align="center">
+  <b>Predict the most effective drug using ML + LLM based on real patient data</b>
+</p>
 
-    <h1 align="center">💊 AI Drug Effectiveness Prediction System</h1>
+<p align="center">
+  <img src="https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Backend-Flask-black?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/ML-Scikit--Learn-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/LLM-LLaMA-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge"/>
+</p>
 
-    <p align="center">
-      <b>Predict the most effective drug using ML + LLM based on real patient data</b>
-    </p>
+---
 
-    <div class="badges" align="center">
-      <span class="badge badge-react">Frontend: React</span>
-      <span class="badge badge-flask">Backend: Flask</span>
-      <span class="badge badge-sklearn">ML: Scikit‑Learn</span>
-      <span class="badge badge-llama">LLM: LLaMA (Local)</span>
-      <span class="badge badge-active">Status: Active</span>
-    </div>
+## 🎥 Demo Video
 
-    <hr />
+<p align="center">
+  <a href="https://youtu.be/MpBNdcjojZE">
+    <img src="https://img.shields.io/badge/▶️ Watch Demo-red?style=for-the-badge&logo=youtube"/>
+  </a>
+</p>
 
-    <h2>🎥 Demo Video</h2>
-    <p align="center">
-      <a href="https://youtu.be/MpBNdcjojZE" target="_blank">
-        <span class="badge badge-yt">▶️ Watch Demo (YouTube)</span>
-      </a>
-    </p>
+---
 
-    <hr />
+## 🧠 Core Idea
 
-    <h2>🧠 Core Idea</h2>
-    <p>
-      This system compares different drugs used for the <strong>same medical condition</strong> and determines:
-    </p>
-    <ul>
-      <li>⏱️ Recovery duration (days)</li>
-      <li>📊 Drug effectiveness across patients</li>
-      <li>⚠️ Side effect risk</li>
-      <li>📃 Medical reviews</li>
-      <li>👥 Patient review count</li>
-    </ul>
-    <p>
-      👉 Goal: Identify the <strong>most effective drug with faster recovery and fewer side effects</strong>.
-    </p>
+This system compares different drugs used for the **same medical condition** and determines:
 
-    <hr />
+- ⏱️ **Recovery duration (days)**
+- 📊 **Drug effectiveness across patients**
+- ⚠️ **Side effect risk**
+- 📃 **Medical reviews**
+- 👥 **Patient review count**
 
-    <h2>🔥 Features</h2>
-    <ul>
-      <li>✅ ML‑based drug ranking system</li>
-      <li>⏱️ Recovery duration prediction (e.g., 18–21 days, 24–27 days)</li>
-      <li>📊 Confidence score based on patient reviews</li>
-      <li>👥 Patient count for real‑world validation</li>
-      <li>🤖 LLM‑based personalized drug explanations</li>
-      <li>📄 Blood report PDF → auto disease detection</li>
-      <li>🔍 Smart condition search (fuzzy matching)</li>
-      <li>🎯 Drug effectiveness comparison across multiple patients</li>
-    </ul>
+👉 Goal: Identify the **most effective drug with faster recovery and fewer side effects**
 
-    <hr />
+---
 
-    <h2>🧪 Machine Learning Models Used</h2>
-    <ul>
-      <li>🔹 Regression Model (Scikit‑learn)</li>
-      <li>🔹 Feature Scaling (StandardScaler)</li>
-      <li>🔹 Custom Hybrid Scoring System</li>
-      <li>🔹 Fuzzy Matching (Difflib)</li>
-    </ul>
+## 🔥 Features
 
-    <hr />
+- ✅ ML-based drug ranking system  
+- ⏱️ Recovery duration prediction (e.g., 18–21 days, 24–27 days)  
+- 📊 Confidence score based on patient reviews  
+- 👥 Patient count for real-world validation  
+- 🤖 LLM-based personalized drug explanations  
+- 📄 Blood report PDF → auto disease detection  
+- 🔍 Smart condition search (fuzzy matching)  
+- 🎯 Drug effectiveness comparison across multiple patients  
 
-    <h2>📊 How It Works</h2>
-    <ol>
-      <li><strong>User inputs:</strong>
-        <ul>
-          <li>Condition</li>
-          <li>Age</li>
-          <li>Severity</li>
-        </ul>
-      </li>
-      <li><strong>System:</strong>
-        <ul>
-          <li>Matches condition using fuzzy logic</li>
-          <li>Filters relevant drugs</li>
-          <li>Calculates effectiveness score</li>
-          <li>Ranks top drugs</li>
-        </ul>
-      </li>
-      <li><strong>Output:</strong>
-        <ul>
-          <li>🏆 Best drug</li>
-          <li>⏱️ Recovery duration range</li>
-          <li>📊 Confidence score</li>
-          <li>👥 Number of patients</li>
-          <li>💡 Explanation (LLM)</li>
-        </ul>
-      </li>
-    </ol>
+---
 
-    <hr />
+## 🧪 Machine Learning Models Used
 
-    <h2>⚙️ Tech Stack</h2>
-    <table>
-      <tr>
-        <th>Layer</th>
-        <th>Technology</th>
-      </tr>
-      <tr>
-        <td>Frontend</td>
-        <td>React.js</td>
-      </tr>
-      <tr>
-        <td>Backend</td>
-        <td>Flask</td>
-      </tr>
-      <tr>
-        <td>ML</td>
-        <td>Scikit‑learn</td>
-      </tr>
-      <tr>
-        <td>LLM</td>
-        <td>LLaMA (Local)</td>
-      </tr>
-      <tr>
-        <td>Data</td>
-        <td>Pandas, NumPy</td>
-      </tr>
-    </table>
+- 🔹 **Regression Model (Scikit-learn)**  
+- 🔹 **Feature Scaling (StandardScaler)**  
+- 🔹 **Custom Hybrid Scoring System**  
+- 🔹 **Fuzzy Matching (Difflib)**  
 
-    <hr />
+---
 
-    <h2>🔄 System Flow</h2>
-    <pre>
-A [User Input] --&gt; B [Condition Matching]
-B --&gt; C [Drug Filtering]
-C --&gt; D [ML + Statistical Scoring]
-D --&gt; E [Top Drug Ranking]
-E --&gt; F [Recovery Time + Confidence]
-F --&gt; G [LLM Explanation]
-    </pre>
+## 📊 How It Works
 
-    <hr />
+1. User inputs:
+   - Condition  
+   - Age  
+   - Severity  
 
-    <h2>📸 Screenshots</h2>
-    <p align="center">
-      <img src="screenshots/home.png" alt="Home Page" width="80%"/>
-    </p>
-    <p align="center">
-      <img src="screenshots/search.png" alt="Search Page" width="80%"/>
-    </p>
-    <p align="center">
-      <img src="screenshots/result.png" alt="Result Page" width="80%"/>
-    </p>
+2. System:
+   - Matches condition using fuzzy logic  
+   - Filters relevant drugs  
+   - Calculates effectiveness score  
+   - Ranks top drugs  
 
-    <hr />
+3. Output:
+   - 🏆 Best drug  
+   - ⏱️ Recovery duration range  
+   - 📊 Confidence score  
+   - 👥 Number of patients  
+   - 💡 Explanation (LLM)  
 
-    <h2>▶️ Run Locally</h2>
-    <pre>
+---
+
+## ⚙️ Tech Stack
+
+| Layer       | Technology |
+|------------|------------|
+| Frontend   | React.js |
+| Backend    | Flask |
+| ML         | Scikit-learn |
+| LLM        | LLaMA (Local) |
+| Data       | Pandas, NumPy |
+
+---
+
+## 🔄 System Flow
+
+```mermaid
+flowchart LR
+A[User Input] --> B[Condition Matching]
+B --> C[Drug Filtering]
+C --> D[ML + Statistical Scoring]
+D --> E[Top Drug Ranking]
+E --> F[Recovery Time + Confidence]
+F --> G[LLM Explanation]
+
+<p align="center">
+  <img src="screenshots/home.png" width="80%"/>
+</p>
+<p align="center">
+  <img src="screenshots/search.png" width="80%"/>
+</p>
+<p align="center">
+  <img src="screenshots/result.png" width="80%"/>
+</p>
+
 cd backend
 pip install -r requirements.txt
 python app.py
@@ -257,13 +122,8 @@ python app.py
 cd frontend
 npm install
 npm start
-    </pre>
 
-    <p align="center">
-      🚀 Built with passion for AI in Healthcare
-    </p>
-
-  </section>
-
-</body>
-</html>
+<p align="center">
+  🚀 Built with passion for AI in Healthcare
+</p>
+```
