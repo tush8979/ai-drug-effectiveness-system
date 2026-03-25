@@ -12,6 +12,8 @@
   <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge"/>
 </p>
 
+---
+
 ## 🎥 Demo Video
 
 <p align="center">
@@ -20,7 +22,7 @@
   </a>
 </p>
 
-
+---
 
 ## 🧠 Core Idea
 
@@ -29,7 +31,7 @@ This system compares different drugs used for the **same medical condition** and
 - ⏱️ **Recovery duration (days)**
 - 📊 **Drug effectiveness across patients**
 - ⚠️ **Side effect risk**
-- 📃 **medical reviews**
+- 📃 **Medical reviews**
 - 👥 **Patient review count**
 
 👉 Goal: Identify the **most effective drug with faster recovery and fewer side effects**
@@ -52,21 +54,9 @@ This system compares different drugs used for the **same medical condition** and
 ## 🧪 Machine Learning Models Used
 
 - 🔹 **Regression Model (Scikit-learn)**  
-  → Predicts drug effectiveness score  
-
 - 🔹 **Feature Scaling (StandardScaler)**  
-  → Normalizes input features  
-
 - 🔹 **Custom Hybrid Scoring System**  
-  Combines:
-  - Drug rating  
-  - Number of reviews  
-  - Side effect risk  
-  - Severity  
-  - ML prediction score  
-
 - 🔹 **Fuzzy Matching (Difflib)**  
-  → Handles user input errors (e.g., "cance" → "cancer")  
 
 ---
 
@@ -104,7 +94,7 @@ This system compares different drugs used for the **same medical condition** and
 
 ---
 
-## 📊 How It Works
+## 🔄 System Flow
 
 ```mermaid
 flowchart LR
@@ -113,43 +103,31 @@ B --> C[Drug Filtering]
 C --> D[ML + Statistical Scoring]
 D --> E[Top Drug Ranking]
 E --> F[Recovery Time + Confidence]
-F --> G[LLM Explanation]  
-
+F --> G[LLM Explanation]
 
 ## 📸 Screenshots
-
-<h3 align="center">🏠 Home Screen</h3>
 <p align="center">
   <img src="screenshots/home.png" width="80%"/>
 </p>
-<h3 align="center">🔍 Search & Suggestions</h3>
 <p align="center">
   <img src="screenshots/search.png" width="80%"/>
 </p>
-<h3 align="center">📊 Results Dashboard</h3>
 <p align="center">
   <img src="screenshots/result.png" width="80%"/>
 </p>
 
-
-
----
-
 ## ▶️ Run Locally
 
-### Backend
-```bash
 cd backend
 pip install -r requirements.txt
 python app.py
 
-## Frontend
-
 cd frontend
 npm install
 npm start
----
+
 <p align="center">
   🚀 Built with passion for AI in Healthcare
 </p>
 ```
+
