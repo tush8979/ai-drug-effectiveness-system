@@ -105,7 +105,7 @@ D --> E[Top Drug Ranking]
 E --> F[Recovery Time + Confidence]
 F --> G[LLM Explanation]
 
-## 📸 Screenshots
+ 📸 Screenshots
 <p align="center">
   <img src="screenshots/home.png" width="80%"/>
 </p>
@@ -116,7 +116,7 @@ F --> G[LLM Explanation]
   <img src="screenshots/result.png" width="80%"/>
 </p>
 
-## ▶️ Run Locally
+ ▶️ Run Locally
 
 cd backend
 pip install -r requirements.txt
